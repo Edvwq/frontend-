@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CardModule } from 'primeng/card';
 import { ProductoComponent } from './components/producto/producto.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 
@@ -11,7 +12,8 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
     CategoriaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CardModule
   ]
 })
 export class InventarioModule { }

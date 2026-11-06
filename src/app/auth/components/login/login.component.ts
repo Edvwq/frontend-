@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { AuthService } from '../../services/auth.service';
 export class LoginComponent {
 
   private authService=inject(AuthService)
+  private router=inject(Router)
 
 
   loginForm=new FormGroup({
@@ -21,12 +23,12 @@ export class LoginComponent {
     this.authService.loginConNest(this.loginForm.value).subscribe(
       (res)=>{
         console.log(res)
+        this.router.navigate(['/admin'])
       },
       (error)=>{
         console.log(error)
       }
     )
-    //alert("Ingresando...")
   }
 
 }

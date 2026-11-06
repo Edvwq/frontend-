@@ -4,19 +4,23 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { ClienteComponent } from './components/cliente/cliente.component';
-import { LayoutComponent } from './layout/layout.component';
+import { AppLayoutModule } from './layout/app.layout.module';
+import { CardModule } from 'primeng/card';
+import { InventarioModule } from './inventario/inventario.module';
 
 
 
 @NgModule({
   declarations: [
     PerfilComponent,
-    ClienteComponent,
-    LayoutComponent
+    ClienteComponent
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    AppLayoutModule,
+    CardModule,
+    InventarioModule
   ]
 })
 export class AdminModule { }
