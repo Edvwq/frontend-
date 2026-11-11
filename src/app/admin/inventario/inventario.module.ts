@@ -3,6 +3,13 @@ import { CommonModule } from '@angular/common';
 import { CardModule } from 'primeng/card';
 import { ProductoComponent } from './components/producto/producto.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TableModule } from 'primeng/table';
+import {DialogModule} from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { RippleModule } from 'primeng/ripple';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +20,14 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
   ],
   imports: [
     CommonModule,
-    CardModule
+    CardModule,
+    HttpClientModule,
+    TableModule,
+    DialogModule,
+    ButtonModule,
+    InputTextModule,
+    RippleModule,
+    ReactiveFormsModule
   ]
 })
 export class InventarioModule { }
