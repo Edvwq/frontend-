@@ -10,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { RippleModule } from 'primeng/ripple';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToolbarModule } from 'primeng/toolbar';
 
 
 
@@ -27,7 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ButtonModule,
     InputTextModule,
     RippleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToolbarModule
   ]
 })
 export class InventarioModule { }
